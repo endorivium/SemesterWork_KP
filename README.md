@@ -1,2 +1,2 @@
 # SemesterWork_KP
-Semester work for the KP module WS 25/26
+Semester work repo for KP module WS 25/26
