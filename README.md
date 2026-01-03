@@ -7,7 +7,7 @@ language's suitability to it.
 # Project Content
 ## Builds
 The Builds folder has the finished builds of the two chess engines, marked by their respective languages.
-To run the Kotlin build, open the command terminal in the same directory as the file and run the file
+To run the Kotlin build, Java needs to be installed (tested with Java 25), then open the command terminal in the same directory as the file and run the file
 via
 > **java -jar ChessEngine_Kotlin.jar**
 
@@ -15,9 +15,15 @@ For the Go build, it is recommended to run it via the command terminal as well b
 in the same directory and typing "ChessEngine_Go.exe". It is possible to open it directly, and it will work 
 but a checkmate will terminate the program before being able to see the result.
 
+Note: the builds have letter shortcuts for the chess pieces since that is most friendly for all types of terminals. 
+However, within the Kotlin implementation there is a unicode implemented rendering that used unicode characters which
+are much nicer to look at.
+
 ## Projects
 Both source codes are marked by their respective languages. The Kotlin implementation was developed in Intellij
 IDEA, whereas the Go implementation was done in Goland.
+To open the Kotlin implementation, open the project folder (chessEngine_kotlin) in Intellij IDEA and configure it to Java when asked.
+To open the Go implementation, open the project folder (chessEngine_go) in Goland and setup GOROOT (tested for Go 1.25.1).
 
 ### Testing the Code
 Both implementation include unit tests that can be run in their respective IDEs. In Kotlin, these can be found in the folder **test**.
@@ -75,6 +81,12 @@ A response is once again sent back and evaluated by the GameManager for any need
 [![](https://mermaid.ink/img/pako:eNp1UslOwzAQ_RVrriRVFpzFhx4ACZDoiRvKxaqHNCK2g2OjQtV_x27aUKjwaeb5LaOxd7DWAoHBiO8O1RrvOt4aLhtF_FnxTsXL5dU9l7jiirdoGBktN5a0HiK91sPEDBUJtKcZOhMFj0c1OPvAleiDiQlxoyVdQCf-OSH2ivh3KipBtLMz_Y_9jeZGPFtufySnDKk_kOAW1852Wk3qC_o_ibPMu42uP2b7m8shgkFYGJt24zkoIILWdAKYNQ4jkGgkDy3sgr4Bu0GJDTBfCm7eGmjU3msGrl60lieZ0a7dAHvl_eg7Nwg_9vGdZtSEPHOrnbLA0jI_mADbwRZYRukiyao0L7OkTPI0oxF8elZSLqqK0oQWZZEVNc33EXwdcpNF6eEqK4rruq7zIvV-KDqrzWr6Lodfs_8GPpi6rQ?type=png)](https://mermaid.live/edit#pako:eNp1UslOwzAQ_RVrriRVFpzFhx4ACZDoiRvKxaqHNCK2g2OjQtV_x27aUKjwaeb5LaOxd7DWAoHBiO8O1RrvOt4aLhtF_FnxTsXL5dU9l7jiirdoGBktN5a0HiK91sPEDBUJtKcZOhMFj0c1OPvAleiDiQlxoyVdQCf-OSH2ivh3KipBtLMz_Y_9jeZGPFtufySnDKk_kOAW1852Wk3qC_o_ibPMu42uP2b7m8shgkFYGJt24zkoIILWdAKYNQ4jkGgkDy3sgr4Bu0GJDTBfCm7eGmjU3msGrl60lieZ0a7dAHvl_eg7Nwg_9vGdZtSEPHOrnbLA0jI_mADbwRZYRukiyao0L7OkTPI0oxF8elZSLqqK0oQWZZEVNc33EXwdcpNF6eEqK4rruq7zIvV-KDqrzWr6Lodfs_8GPpi6rQ)
 
 This concludes a rough overview of the chess engine implementation.
+
+### Note: BoardRenderer and CmdBoardRenderer
+Within the Kotlin implementation, there are two renderers for the board with the Cmd prefixed one being used in the build due to its terminal friendliness.
+However, this renderer can be replaced in the GameManager class with the normal BoardRenderer (just delete the Cmd) which uses unicode emojis for the chess pieces.
+
+To make sure, that the unicode is displayed correctly, configure the VM option within the Run Configurations to -Dstdout.encoding=UTF8.
 
 # Sources
 There are multiple websites which heavily inspired the approach and implementation to this chess engine or which helped during
