@@ -25,6 +25,20 @@ IDEA, whereas the Go implementation was done in Goland.
 To open the Kotlin implementation, open the project folder (chessEngine_kotlin) in Intellij IDEA and configure it to Java when asked.
 To open the Go implementation, open the project folder (chessEngine_go) in Goland and setup GOROOT (tested for Go 1.25.1).
 
+## Interacting with the Chess Engine
+Generally, the chess engine is turned based and the only signifier for whose turn it is, is a small banner at the top of the board.
+The board is oriented to be in the perspective of the White board side, meaning the white pieces are at the bottom and the black ones' are at the top.
+In the Kotlin version, there is a help command which will display all possible commands with an appropriate explanation. Its implementation is rather robust,
+is not case sensitive and will give feedback on the input. To summarise the most important commands:
+- (move) SquareCoord (to) SquareCoord: this allows the player to move a chess piece from one square to another, the coordinates must be written in algebraic notation (e.g. f2 f4)
+- check ChessPieceName: displays a list of coordinates the given piece can move to
+- demo DemoIndex: there are six demo games that demonstrate the engine's abilities, the demos are a bit nonsensical at times, only presenting a certain game mechanic
+- reset: resets the game
+
+Go has a much less extensive implementation and only supports two commands that are very format sensitive:
+- SquareCoord SquareCoord: also allows the player to move chess pieces, must have a space between the coords
+- demo DemoIndex: will play through one of two demo games (White win, Black win)
+
 ### Testing the Code
 Both implementation include unit tests that can be run in their respective IDEs. In Kotlin, these can be found in the folder **test**.
 However, there was a problem with the version that was being used in conjunction the mocking libraries that I had attempted to use 
@@ -65,8 +79,10 @@ In the Go version, a Mover interface was instead implemented which included all 
 implemented for multistep (Rook, Bishop, Queen) single-step (Knight, King) and Pawn pieces. Since polymorphism was achieved through the Mover interface 
 (which must be implemented fully to be functional), it was not possible to avoid the code duplication of the CanExecuteMove() function.
 
-It should be noted here that the Go implementation is **heavily based** on the Kotlin one, with the code being transposed from one into the other and rewritten
-to be in the right syntax to evaluate the viability of an OOP approach in Go.
+It should be noted here that due to time constraints the Go implementation is **heavily based** on the Kotlin one, with the code being transposed from one into the other and rewritten
+to be in the right syntax to evaluate the viability of an OOP approach in Go. The Go version does not implement all commands that are present in the Kotlin one,
+instead providing only a simplified move command and the demo command with a "White wins!" and "Black wins!" demo. Furthermore, the Go version does not present
+a full chess engine, as it misses king castling, pawn en passant and pawn promotion.
 
 Lastly, as for the structure itself, there are five major components: input handling, board state managing, board rendering, 
 chess piece movement constraints and the overall management of the game loop ("game managing").
