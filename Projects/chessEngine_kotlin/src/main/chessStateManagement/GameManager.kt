@@ -10,7 +10,7 @@ import inputHandling.InputHandler
 
 open class GameManager(
     private var inputHandler: InputHandler = InputHandler(),
-    private var renderer: CmdBoardRenderer = CmdBoardRenderer(),
+    private var renderer: BoardRenderer = BoardRenderer(),
     private var bsm: BoardStateManager = BoardStateManager()
 ) {
     private var whiteTurn = true

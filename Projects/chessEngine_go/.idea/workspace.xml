@@ -5,24 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12496e29-c6e4-438f-a27d-5ef9bb595dec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Ex03/ex03.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Ex03/ex03.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Obsidian/.obsidian/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Obsidian/.obsidian/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Obsidian/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Obsidian/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Obsidian/KP/Coursework/Coursework.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Obsidian/KP/Coursework/Coursework.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Obsidian/Markdown Guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Obsidian/Markdown Guide.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chessEngine_kotlin/chessEngine_kotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../chessEngine_kotlin/chessEngine_kotlin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chessEngine_kotlin/src/main/chessStateManagement/GameManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../chessEngine_kotlin/src/main/chessStateManagement/GameManager.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.25.3" />
+  <component name="GOROOT" url="file://$USER_HOME$/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.25.3.windows-amd64" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="37krcSiLJOi951oylmjIriezjqd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,9 +41,14 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/jihre",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -68,8 +71,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-f466f9b0953e-146d08934cbf-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-252.27397.100" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-GO-252.27397.100" />
+        <option value="bundled-gosdk-f466f9b0953e-3d2cccfc42a2-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-252.26199.158" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-GO-252.26199.158" />
       </set>
     </attachedChunks>
   </component>
